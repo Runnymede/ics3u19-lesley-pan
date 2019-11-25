@@ -16,7 +16,6 @@ public class HappyAndYouKnowIt {
 		 */
 		Scanner sc = new Scanner(System.in);
 		
-		
 		for (int counter = 0; counter < 10; counter ++)
 		{
 			
