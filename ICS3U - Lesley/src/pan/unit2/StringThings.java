@@ -1,19 +1,22 @@
+package pan.unit2;
 import java.util.Scanner;
 
-public class StringThings {
-	
-	/** Learning to use string commands
-	 * October 3, 2019
-	 * @authorLesley
-	 */
 
+/** Learning to use string commands
+ * October 3, 2019
+ * @authorLesley
+ */
+
+public class StringThings {
+
+	/** 
+	 * This is where our program starts.
+	 * @param args unused
+	 */
+	
 	public static void main(String[] args) 
 	{
-		/** 
-		 * This is where our program starts.
-		 * @param args unused
-		 */
-		
+
 		Scanner sc = new Scanner(System.in);
 	
 		//asks user for a word pt 1

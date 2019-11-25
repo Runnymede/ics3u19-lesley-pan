@@ -1,18 +1,18 @@
+package pan.unit2;
 import java.util.Scanner;
 
+/** More loops();
+ * October 30, 2019
+ * @authorLesley
+ */
 public class DigitsDisplay {
 	
-	/** More loops();
-	 * October 30, 2019
-	 * @authorLesley
+	/** 
+	 * This is where our program starts.
+	 * @param args unused
 	 */
-
-	public static void main(String[] args) {
 	
-		/** 
-		 * This is where our program starts.
-		 * @param args unused
-		 */
+	public static void main(String[] args) {
 		
 	Scanner sc = new Scanner(System.in);
 	

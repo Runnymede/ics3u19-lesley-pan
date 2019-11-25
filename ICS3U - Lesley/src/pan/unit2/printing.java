@@ -1,19 +1,22 @@
+package pan.unit2;
 import java.text.NumberFormat;
 import java.util.Scanner;
 
-public class printing {
 
-	/** Learning to use switch and if statements
-	 * October 4, 2019
-	 * @authorLesley
-	 */
+/** Learning to use switch and if statements
+ * October 4, 2019
+ * @authorLesley
+ */
+
+public class printing {
 	
+	/** 
+	 * This is where our program starts.
+	 * @param args unused
+	 */
+
 	public static void main(String[] args) 
 	{
-		/** 
-		 * This is where our program starts.
-		 * @param args unused
-		 */
 
 		Scanner sc = new Scanner(System.in);
 		

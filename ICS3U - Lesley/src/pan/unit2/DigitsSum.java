@@ -1,3 +1,4 @@
+package pan.unit2;
 import java.util.Scanner;
 
 public class DigitsSum {
@@ -12,7 +13,6 @@ public class DigitsSum {
 		/** 
 		 * This is where our program starts.
 		 * @param args unused
-		 * NOT DONEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 		 */
 		
 	Scanner sc = new Scanner(System.in);

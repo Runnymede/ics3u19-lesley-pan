@@ -1,20 +1,21 @@
+package pan.unit2;
 import java.util.Scanner;
+
+
+/** Common Problems pt 2
+ * November 6, 2019
+ * @authorLesley
+ */
 
 public class NecklaceProject
 {
-
-	/** Common Problems pt 2
-	 * November 6, 2019
-	 * @authorLesley
+	/** 
+	 * This is where our program starts.
+	 * @param args unused
 	 */
-	
+
 	public static void main(String[] args) 
 	{
-		/** 
-		 * This is where our program starts.
-		 * @param args unused
-		 */
-
 		Scanner sc = new Scanner(System.in);
 		
 		//Initialize variables
@@ -29,7 +30,7 @@ public class NecklaceProject
 		System.out.println("And another one please.");
 		int origNum2 = sc.nextInt();
 		
-		//adds onto the neckalce until it repeats the last two numbers
+		//adds onto the necklace until it repeats the last two numbers
 		if (origNum1 < toFindACheater || origNum2 < toFindACheater)
 		{
 		 System.out.println("Sorry, you can't have a necklace if you can't follow the rules.");	

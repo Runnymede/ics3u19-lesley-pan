@@ -1,42 +1,29 @@
+package pan.unit2;
 import java.util.Scanner;
+/** Learning to use switch and if statements
+ * October 3, 2019
+ * @authorLesley
+ */
 
-public class CarRecallBetter 
+public class CarRecall 
 {
-
-	/** Learning to use loops
-	 * October 28, 2019
-	 * @authorLesley
+	/** 
+	 * This is where our program starts.
+	 * @param args unused
 	 */
-	
 	public static void main(String[] args) 
 	{
-		/** 
-		 * This is where our program starts.
-		 * @param args unused
-		 */
 		
 		Scanner sc = new Scanner(System.in);
-		
-		boolean endProgram = true;
 		
 		//asks user for car model number//
 		System.out.println("Our company has found a defect in some of our car models. \n"
 				+ "Please enter you model number to check if your car needs to be recalled");
-		
 		int modelNumber =sc.nextInt();
-	
 		
-		do {
-			System.out.println("Please enter another model number or 0 to quit.");
-			modelNumber =sc.nextInt();
-			if (modelNumber == 0) {
-				endProgram = false;
-			}
 			//checks to see if their car model is defected// 
 			switch (modelNumber) 
 			{
-			case 0: System.out.println("Bye");
-			break;
 			case 179: 
 			case 189:
 			case 190: 
@@ -51,13 +38,10 @@ public class CarRecallBetter
 			break;
 			default: System.out.println("Don't worry your car is not defected. \n"
 					+ "Have a nice day!");
-			
-			}
+		
 					                                                                                                                                                                                                                                                                                                                                      
 			
-			
-		}while (endProgram == true); 
-		
-
+			}
+	
 	}
 }

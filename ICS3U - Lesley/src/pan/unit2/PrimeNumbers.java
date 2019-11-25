@@ -1,21 +1,22 @@
+package pan.unit2;
 import java.util.Scanner;
+
+/** Using Math.random();
+ * October 22, 2019
+ * @authorLesley
+ */
 
 public class PrimeNumbers {
 	
-	/** Using Math.random();
-	 * October 22, 2019
-	 * @authorLesley
+	/** 
+	 * This is where our program starts.
+	 * @param args unused
+	 * ALSO DOESNT WORK 
 	 */
+	
 
 	public static void main(String[] args) 
 	{
-	
-		/** 
-		 * This is where our program starts.
-		 * @param args unused
-		 * ALSO DOESNT WORK 
-		 */
-		
 		Scanner sc = new Scanner(System.in); 
 		
 		//asks user for a number
