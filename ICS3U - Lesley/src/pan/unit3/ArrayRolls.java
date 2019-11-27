@@ -18,7 +18,8 @@ public class ArrayRolls {
 		
 		System.out.println("Welcome to the random dice generator.");
 		
-		int [] sumTotal = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+		int [] possibleSum = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+		int [] sumTotal = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 		
 		for (int counter = 0; counter <= 10000; counter ++)
 			{
@@ -28,20 +29,38 @@ public class ArrayRolls {
 			
 				switch (rollTotal)
 				{
-				case 2: sumTotal [0] =+ 1;
-				case 3:	sumTotal [CHANGE THESE] =+ 1;
-				case 4: sumTotal [1] =+ 1;
-				case 5: sumTotal [1] =+ 1;
-				case 6: sumTotal [1] =+ 1;
-				case 7: sumTotal [1] =+ 1;
-				case 8: sumTotal [1] =+ 1;
-				case 9: sumTotal [1] =+ 1;
-				case 10: sumTotal [1] =+ 1;
-				case 11: sumTotal [1] =+ 1;
-				case 12: sumTotal [1] =+ 1;
+				case 2: sumTotal [0] += 1;
+				break;
+				case 3:	sumTotal [1] += 1;
+				break;
+				case 4: sumTotal [2] += 1;
+				break;
+				case 5: sumTotal [3] += 1;
+				break;
+				case 6: sumTotal [4] += 1;
+				break;
+				case 7: sumTotal [5] += 1;
+				break;
+				case 8: sumTotal [6] += 1;
+				break;
+				case 9: sumTotal [7] += 1;
+				break;
+				case 10: sumTotal [8] += 1;
+				break;
+				case 11: sumTotal [9] += 1;
+				break;
+				case 12: sumTotal [10] += 1;
+				break;
 				default: break;
 				}
+				
 			}
+				System.out.format("%-30s %-20s\n",  "Total", "Number of Rolls");
+				
+				for(int c = 0; c < possibleSum.length; c++)
+				{
+				System.out.format("%-30s %-20s\n",  possibleSum [c], sumTotal[c]);	
+				}
 		
 	
 	}
