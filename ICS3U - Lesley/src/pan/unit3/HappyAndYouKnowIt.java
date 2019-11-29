@@ -22,7 +22,7 @@ public class HappyAndYouKnowIt {
 		"hop for me!"};
 		
 		//print the song lines
-		for (int counter = 0; counter < 10; counter ++)
+		for (int counter = 0; counter <= 11; counter ++)
 		{
 			System.out.println("If you're happy and you know it " + actions [counter]);
 		}
