@@ -17,6 +17,7 @@ public class ArrayGuess {
 		 */
 		Scanner sc = new Scanner(System.in);
 
+		//set guesses
 		String [] fruitGuesses = {"apple", "orange", "banana", "watermelon", "strawberry", 
 				"grapes", "mango", "peach", "cherry", "kiwi", 
 				"melon", "plum", "pineapple", "lychee", "starfruit",
@@ -25,11 +26,13 @@ public class ArrayGuess {
 		System.out.println("Hi, let's play a guessing game. Think of a fruit and i'll try to guess it.");
 		Thread.sleep(1000);
 
+		//generates a random guess 
 		value = (int)(Math.random() * 20);
 		System.out.println("Is it " + fruitGuesses[value] + "?");
 
 		String response = sc.nextLine();
 
+		//checks that guess hasn't been asked yet
 		for (int counter = 0; counter<fruitGuesses.length-1; counter++)
 		{
 			if (response.equalsIgnoreCase("yes")) {
@@ -49,7 +52,7 @@ public class ArrayGuess {
 
 			}
 
-
+		//in case the program can't guess it
 		}
 		if (response.equalsIgnoreCase("no"))
 			System.out.println("Aww I couldn't guess it. Maybe next time.");

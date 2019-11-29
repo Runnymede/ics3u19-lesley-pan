@@ -18,9 +18,11 @@ public class ArrayRolls {
 		
 		System.out.println("Welcome to the random dice generator.");
 		
+		//create space to tally the sums
 		int [] possibleSum = {2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
 		int [] sumTotal = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 		
+		//rolls two dice 10000 times
 		for (int counter = 0; counter <= 10000; counter ++)
 			{
 			int firstRoll = (int)(Math.random()*6)+1;
@@ -55,6 +57,7 @@ public class ArrayRolls {
 				}
 				
 			}
+		//prints out tally
 				System.out.format("%-30s %-20s\n",  "Total", "Number of Rolls");
 				
 				for(int c = 0; c < possibleSum.length; c++)

@@ -16,10 +16,12 @@ public class HappyAndYouKnowIt {
 		 */
 		Scanner sc = new Scanner(System.in);
 		
+		//create the array of actions
 		String [] actions = {"clap your hands!", "stomp your feet!", "and you really want to show it,", "snap your fingers!",
 		"yell hooray!", "shout in glee!", "and you want the world to know it,", "scream yippe!", "jump around!", "skip about!", "and you think that they should know it,",
 		"hop for me!"};
 		
+		//print the song lines
 		for (int counter = 0; counter < 10; counter ++)
 		{
 			System.out.println("If you're happy and you know it " + actions [counter]);

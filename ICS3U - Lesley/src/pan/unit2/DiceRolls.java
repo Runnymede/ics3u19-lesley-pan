@@ -19,13 +19,15 @@ public class DiceRolls {
 		
 		System.out.println("Welcome to the random dice generator.");
 		
+		//creates both dice and rolls them
 		for (int counter = 1; counter <= 5; counter ++)
 			{
 			
 			int firstRoll = (int)(Math.random()*6)+1;
 			int secondRoll = (int)(Math.random()*6)+1;
 			int rollTotal = firstRoll + secondRoll;
-			
+		
+			//print out the rolls and their sums
 			System.out.format("%6s %5s %5s", firstRoll, secondRoll, rollTotal);
 			System.out.println();
 			
