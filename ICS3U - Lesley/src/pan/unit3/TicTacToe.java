@@ -23,6 +23,8 @@ public class TicTacToe {
 		String tttBoard [][] = { {" _ ", " _ ", " _ "}, {" _ ", " _ ", " _ "}, {" _ ", " _ ", " _ "} };
 		int column = 0;
 		int row = 0;
+		int xWin = 0;
+		int oWin = 0;
 
 		System.out.format("%4s %3s %3s\n",  "0", "1", "2");
 		for (int rows = 0; rows < tttBoard.length; rows ++ ) 
@@ -44,13 +46,15 @@ public class TicTacToe {
 			
 			if (counter % 2 != 0)
 			{
-				
 				System.out.println("Which column would you like to place your x?");
 				column = sc.nextInt();
 				System.out.println("Which row would you like to place your x?");
 				row = sc.nextInt();
 				
-				tttBoard [row][column] = " x ";
+				if (tttBoard [row][column] == (" x ") || tttBoard [row][column] == (" o "))
+					System.out.println("sorry no cheaters in this game");
+				else
+					tttBoard [row][column] = " x ";
 				
 				System.out.format("%4s %3s %3s\n",  "0", "1", "2");
 				for (int rows = 0; rows < tttBoard.length; rows ++ ) 
@@ -71,9 +75,12 @@ public class TicTacToe {
 					column = sc.nextInt();
 					System.out.println("Which row would you like to place your o?");
 					row = sc.nextInt();
-
-					tttBoard [row][column] = " o ";
-
+					
+					if (tttBoard [row][column] == (" x ") || tttBoard [row][column] == (" o "))
+							System.out.println("sorry no cheaters in this game");
+					else
+						tttBoard [row][column] = " o ";
+					
 					System.out.format("%4s %3s %3s\n",  "0", "1", "2");
 					for (int rows = 0; rows < tttBoard.length; rows ++ ) 
 					{
@@ -88,11 +95,53 @@ public class TicTacToe {
 
 				}
 			}
-
-			if ()
-			System.out.println("Thank you for playing!");
-
-
 		
+			System.out.println("Thank you for playing!");
+			
+			//defining win structures
+			if 	//defining x will win with 3 in a row for rows
+				(tttBoard[0][0].equals(" x ") && tttBoard[0][1].equals(" x ") && tttBoard[0][2].equals(" x ") ||
+				tttBoard[1][0].equals(" x ") && tttBoard[1][1].equals(" x ") && tttBoard[1][2].equals(" x ") ||
+				tttBoard[2][0].equals(" x ") && tttBoard[2][1].equals(" x ") && tttBoard[2][2].equals(" x ") ||
+				//defining x will win with 3 in a row for columns
+				tttBoard[0][0].equals(" x ") && tttBoard[1][0].equals(" x ") && tttBoard[2][0].equals(" x ") ||
+				tttBoard[0][1].equals(" x ") && tttBoard[1][1].equals(" x ") && tttBoard[2][1].equals(" x ") ||
+				tttBoard[0][2].equals(" x ") && tttBoard[1][2].equals(" x ") && tttBoard[2][2].equals(" x ") ||
+				//defining X will win with 3 in a row for diagonal
+				tttBoard[0][0].equals(" x ") && tttBoard[1][1].equals(" x ") && tttBoard[2][2].equals(" x ") ||
+				tttBoard[0][2].equals(" x ") && tttBoard[1][1].equals(" x ") && tttBoard[0][2].equals(" x "))
+
+			
+				xWin = 1;
+			
+			if  //defining o will win with 3 in a row for rows
+					(tttBoard[0][0].equals(" o ") && tttBoard[0][1].equals(" o ") && tttBoard[0][2].equals(" o ") ||
+					tttBoard[1][0].equals(" o ") && tttBoard[1][1].equals(" o ") && tttBoard[1][2].equals(" o ") ||
+					tttBoard[2][0].equals(" o ") && tttBoard[2][1].equals(" o ") && tttBoard[2][2].equals(" o ") ||
+					//defining o will win with 3 in a row for columns
+					tttBoard[0][0].equals(" o ") && tttBoard[1][0].equals(" o ") && tttBoard[2][0].equals(" o ") ||
+					tttBoard[0][1].equals(" o ") && tttBoard[1][1].equals(" o ") && tttBoard[2][1].equals(" o ") ||
+					tttBoard[0][2].equals(" o ") && tttBoard[1][2].equals(" o ") && tttBoard[2][2].equals(" o ")||
+					//defining o will win with 3 in a row for diagonal
+					tttBoard[0][0].equals(" o ") && tttBoard[1][1].equals(" o ") && tttBoard[2][2].equals(" o ") ||
+					tttBoard[0][2].equals(" o ") && tttBoard[1][1].equals(" o ") && tttBoard[0][2].equals(" o "))
+	
+					
+				oWin = 1;
+			
+			//informs user of results of the game
+			if (oWin == 1 && xWin == 0)
+			{
+			System.out.println("o wins this game!");	
+			}
+			else if (xWin == 1 && oWin == 0)	
+			{
+				System.out.println("o wins this game!");	
+			}
+			else if (xWin == 1 && oWin == 1)
+			{
+				System.out.println("You both tied, maybe you should try again!");
+			}
+			
 	}
 }
