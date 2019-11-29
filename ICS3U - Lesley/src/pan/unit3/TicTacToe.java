@@ -20,6 +20,8 @@ public class TicTacToe {
 		System.out.println("Welcome to the Tic Tac Toe Simulator! "
 				+ "(apparently we're too advanced to use a pen and paper anymore.. -.-\")\n");
 		
+		System.out.println("You will have 9 turns together, make sure to last through all of them and beat your opponent!\n");
+		
 		String tttBoard [][] = { {" _ ", " _ ", " _ "}, {" _ ", " _ ", " _ "}, {" _ ", " _ ", " _ "} };
 		int column = 0;
 		int row = 0;
