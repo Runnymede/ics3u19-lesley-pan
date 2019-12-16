@@ -7,6 +7,7 @@ public class ASCIIMethods {
 	 * @authorLesley
 	 */
 	
+	// create a method that contains my signature
 	public static void printSignature()
 	{
 		System.out.println("\r\n" + 
@@ -24,6 +25,7 @@ public class ASCIIMethods {
 				" '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  \n");
 	}
 	
+	//create a method that contains my image
 	public static void printImage()
 	{
 		System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&%%%%%#%&&&**.........,..  ......  ....  . ...,*/(&&%&&&&&&%%%%%%%%%%%%%%%%%%%%%%&&&&&&&&&&&@\r\n" + 
@@ -56,6 +58,8 @@ public class ASCIIMethods {
 				"&&&&&&&&%#(((#(####%&&&&&&&&&&%#(((((////(((((((/////((/*****//////***///(%&&&&/*/(.,#&&@&&&&&&&&&&@@##%%(* *@@@@&&\r\n" + 
 				"&&&&&&&%(((######%%%&&&@@&&&&&&&%%%##(/////(###(///(##(/**//((((((////(((##%%&/(/..%&&&(/*//(#&&&&@@&&%%%%%%%.&&&&%");
 	}
+	
+	//using those methods to print to console
 	public static void main (String[] args)
 	{
 		printSignature();
