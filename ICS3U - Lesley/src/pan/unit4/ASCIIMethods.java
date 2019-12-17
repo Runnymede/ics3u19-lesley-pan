@@ -1,11 +1,11 @@
 package pan.unit4;
 
-public class ASCIIMethods {
+/** Learning Methods;
+ * December 16, 2019
+ * @authorLesley
+ */
 
-	/** Learning Methods;
-	 * December 16, 2019
-	 * @authorLesley
-	 */
+public class ASCIIMethods {
 	
 	// create a method that contains my signature
 	public static void printSignature()
