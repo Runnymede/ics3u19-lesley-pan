@@ -18,12 +18,15 @@ public class IsoTriangle {
 	
 	for (int counter = 1; counter <= n; counter ++)
 	{
-		int insideCounter = n;
+	    int insideCounter = n;
+	    		
+	for (int counter2 = 1; counter2 <= n; counter2 ++) 
+	{
+		insideCounter -= 1;
 		
-		for (int spacesCounter = insideCounter; spacesCounter != 0; spacesCounter --)		
+		for (int spacesCounter = insideCounter; spacesCounter != 0; spacesCounter -= 1)		
 			drawSpaces(n);
-		
-		insideCounter --;
+	}	 
 		
 		//for (int starsCounter = 1; starsCounter != 1 + n*2; starsCounter += 2)
 		//drawStars(n);
