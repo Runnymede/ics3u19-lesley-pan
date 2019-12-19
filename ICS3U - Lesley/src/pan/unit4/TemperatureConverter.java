@@ -11,7 +11,7 @@ public class TemperatureConverter {
 	//method that prints and gets input from the user
 	public static void main (String [] args) {
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner sc  = new Scanner(System.in);
 		
 		//asks which measurement they want to convert from
 		System.out.println("Do you want to convert from Celsius or from Fahrenheit?");
@@ -46,7 +46,7 @@ public class TemperatureConverter {
 	//converts from celsius to fahrenheit
 	public static double celsiusToFahrenheit (double celsius) {
 		
-		double fahrenheit = celsius * 9 / 5 - 32;
+		double fahrenheit = celsius * 9 / 5 + 32;
 		return fahrenheit;
 
 	}

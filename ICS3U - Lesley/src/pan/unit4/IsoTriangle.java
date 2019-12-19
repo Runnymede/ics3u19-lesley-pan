@@ -7,48 +7,54 @@ import java.util.Scanner;
  */
 
 public class IsoTriangle {
-	
-	public static void main (String[] args) {
-	
-	Scanner sc = new Scanner(System.in);
-		
+
+	public static void main (String[] args) 
+	{
+
+		Scanner sc = new Scanner(System.in);
+
 		System.out.println("Please enter the number of levels for your Isotriangle.");
-		
-	int n = sc.nextInt();
-	
-	for (int counter = 1; counter <= n; counter ++)
-	{
-	    int insideCounter = n;
-	    		
-	for (int counter2 = 1; counter2 <= n; counter2 ++) 
-	{
-		insideCounter -= 1;
-		
-		for (int spacesCounter = insideCounter; spacesCounter != 0; spacesCounter -= 1)		
-			drawSpaces(n);
-	}	 
-		
-		//for (int starsCounter = 1; starsCounter != 1 + n*2; starsCounter += 2)
-		//drawStars(n);
-		
-	System.out.println("up");
-	} 
-	
 
-	
-	}
-	
-	public static void drawSpaces(int n) {
+		int n = sc.nextInt();
+		int constant = n;
 		
-			System.out.print(" ");                         
-		
+		// somehow need to count down in middle for loops so that it does both spaces and stars on the line
+		//wait u need to use n in the variable here
+		for (int counter = n; n != 0; n --)
+		{
+			for (int spaceCounter = n; n != 0; n --)
+			{
+				drawSpaces(constant);
+				
+				do { 
+					constant = constant - 1;
+				}
+				while (spaceCounter != 0);
+			}
+			
+			for (int starCounter = n; n!= 0; n--)
+			{
+				int x = 1 + (2*constant);
+				drawStars(x);
+			}
+
+		}
+
 	}
 
-	public static void drawStars(int  n) {
+	public static void drawSpaces(int n) 
+	{
 
-			System.out.print("*");    
-		 }
-		 	
+		System.out.print(" ");                         
 
-	
+	}
+
+	public static void drawStars(int  n) 
+	{
+
+		System.out.print("*");    
+	}
+
+
+
 }
