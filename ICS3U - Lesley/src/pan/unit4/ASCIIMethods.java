@@ -25,7 +25,10 @@ public class ASCIIMethods {
 				" '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  \n");
 	}
 	
-	//create a method that contains my image
+	/**
+	 * This method create a method that contains my image
+	 */
+	
 	public static void printImage()
 	{
 		System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&%%%%%#%&&&**.........,..  ......  ....  . ...,*/(&&%&&&&&&%%%%%%%%%%%%%%%%%%%%%%&&&&&&&&&&&@\r\n" + 

@@ -1,60 +1,69 @@
 package pan.unit4;
 import java.util.Scanner;
 
-/** Learning Arguments;
- * December 17, 2019
+/** Practicing Methods;
+ * December 18, 2019
  * @authorLesley
  */
 
 public class IsoTriangle {
 
-	public static void main (String[] args) 
+	/**
+	 * This method forms and displays the triangle
+	 * @param args
+	 */
+
+	public static void main (String [] args)
 	{
 
-		Scanner sc = new Scanner(System.in);
+		Scanner sc  = new Scanner(System.in);
+		//asks user for the amount of levels in the triangle
+		System.out.println("Please enter how many levels you want your isotriangle to be.");
 
-		System.out.println("Please enter the number of levels for your Isotriangle.");
-
-		int n = sc.nextInt();
-		int constant = n;
-		
-		// somehow need to count down in middle for loops so that it does both spaces and stars on the line
-		//wait u need to use n in the variable here
-		for (int counter = n; n != 0; n --)
+		int userNum = sc.nextInt();
+		//declares variable that need to be manipulated during the loop
+		int loopCounter = 0;
+		int decrease = userNum;
+		//loop defines how many times the stars and spaces need to be printed per line
+		for (int counter = 0; counter != userNum; counter ++)
 		{
-			for (int spaceCounter = n; n != 0; n --)
-			{
-				drawSpaces(constant);
-				
-				do { 
-					constant = constant - 1;
-				}
-				while (spaceCounter != 0);
-			}
-			
-			for (int starCounter = n; n!= 0; n--)
-			{
-				int x = 1 + (2*constant);
-				drawStars(x);
-			}
+
+			int stars = (loopCounter*2)+1;
+			int spaces = decrease-1;
+			//calls on spaces method
+			for (int spacesCount = 0; spacesCount != spaces; spacesCount ++)
+				printSpaces(spaces);
+			//calls on stars method
+			for (int starCount = 0; starCount != stars; starCount ++)
+				printStars(stars);
+
+			System.out.println();
+			//adjusts variable for a new line
+			loopCounter ++;
+			decrease --;
 
 		}
 
 	}
 
-	public static void drawSpaces(int n) 
+	/**
+	 * This method prints the stars each line
+	 * @param stars
+	 */
+
+	public static void printStars (int stars)
 	{
-
-		System.out.print(" ");                         
-
+		System.out.print("*");
 	}
 
-	public static void drawStars(int  n) 
+	/**
+	 * This method prints the spaces each line
+	 * @param spaces
+	 */
+
+	public static void printSpaces (int spaces)
 	{
-
-		System.out.print("*");    
+		System.out.print(" ");
 	}
-
-
 
 }

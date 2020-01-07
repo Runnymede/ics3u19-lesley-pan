@@ -1,12 +1,12 @@
 package pan.unit4;
 import java.util.Scanner;
 
-/** Creating a math class;
- * December 19, 2019
+/** Creating a math class for doubles;
+ * January 6, 2020
  * @authorLesley
  */
 
-public class MathPlus 
+public class MathPlusDoubles 
 {
 
 	public static void main (String [] args)
@@ -16,7 +16,7 @@ public class MathPlus
 
 		System.out.println("Please enter the length of your array.");
 		int arrayLength = sc.nextInt();
-		int [] num = new int [arrayLength];
+		double [] num = new double [arrayLength];
 
 		System.out.println("Please enter your numbers.");
 		for (int i = 0; i<arrayLength; i++)
@@ -36,35 +36,34 @@ public class MathPlus
 	 * @param stars
 	 */
 	
-	public static int min (int [] num)
+
+	public static double min (double [] num)
 	{
-		
+
 		int count = 0;
 
 		for (int counter = 1; counter<num.length; counter ++)
 		{
-			//checks to see if the next number in the array is smaller than the current min
 			if(num[counter]<num[count])
 			{
-				//if true change the min value
 				count = counter;
 			}
 
 		}
 
-		return count;
+		return (double)count;
 	}
+
 
 	/**
 	 * This method finds the index of the biggest number
 	 * @param stars
 	 */
-	
-	public static int max (int [] num)
+	public static double max (double [] num)
 	{
 
 		int count = 0;
-		//checks to see if the number in the array is greater than the current max
+
 		for (int counter = 1; counter<num.length; counter ++)
 		{
 			if(num[counter]>num[count])
@@ -74,7 +73,7 @@ public class MathPlus
 
 		}
 
-		return count;
+		return (double)count;
 	}
 
 	/**
@@ -82,11 +81,11 @@ public class MathPlus
 	 * @param stars
 	 */
 	
-	public static int sum (int [] num)
+	public static double sum (double [] num)
 	{
 
-		int total = 0;
-		//adds all the nu
+		double total = 0;
+
 		for (int counter = 0; counter<num.length; counter ++)
 		{
 			total += num[counter];
@@ -95,13 +94,12 @@ public class MathPlus
 		return total;
 	}
 
-	
 	/**
 	 * This method finds the average of all the numbers in the array
 	 * @param stars
 	 */
 	
-	public static int average (int [] num)
+	public static double average (double [] num)
 	{
 		int total = 0;
 
@@ -110,7 +108,7 @@ public class MathPlus
 			total += num[counter];
 		}
 
-		int aver = total/num.length;
+		double aver = total/num.length;
 
 		return aver;
 	}
