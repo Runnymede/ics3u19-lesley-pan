@@ -33,7 +33,7 @@ public class MathPlusDoubles
 	
 	/**
 	 * This method finds the index of the smallest number
-	 * @param stars
+	 * @param num
 	 */
 	
 
@@ -41,11 +41,13 @@ public class MathPlusDoubles
 	{
 
 		int count = 0;
-
+		
 		for (int counter = 1; counter<num.length; counter ++)
 		{
+			//checks to see if the next number in the array is smaller than the current min
 			if(num[counter]<num[count])
 			{
+				//if true change the min value
 				count = counter;
 			}
 
@@ -57,7 +59,7 @@ public class MathPlusDoubles
 
 	/**
 	 * This method finds the index of the biggest number
-	 * @param stars
+	 * @param num
 	 */
 	public static double max (double [] num)
 	{
@@ -66,8 +68,10 @@ public class MathPlusDoubles
 
 		for (int counter = 1; counter<num.length; counter ++)
 		{
+			//checks to see if the number in the array is greater than the current max
 			if(num[counter]>num[count])
 			{
+				//if true change the max value
 				count = counter;
 			}
 
@@ -78,14 +82,14 @@ public class MathPlusDoubles
 
 	/**
 	 * This method finds the sum of all the numbers in the array
-	 * @param stars
+	 * @param num
 	 */
 	
 	public static double sum (double [] num)
 	{
 
 		double total = 0;
-
+		//adds all the numbers together
 		for (int counter = 0; counter<num.length; counter ++)
 		{
 			total += num[counter];
@@ -96,18 +100,18 @@ public class MathPlusDoubles
 
 	/**
 	 * This method finds the average of all the numbers in the array
-	 * @param stars
+	 * @param num
 	 */
 	
 	public static double average (double [] num)
 	{
 		int total = 0;
-
+		//adds all the numbers together
 		for (int counter = 0; counter<num.length; counter ++)
 		{
 			total += num[counter];
 		}
-
+		//divides the sum by the amount of numbers
 		double aver = total/num.length;
 
 		return aver;
