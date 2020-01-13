@@ -133,6 +133,8 @@ public class MathPlus
 	public static int median (int [] num)
 	{
 		int mid = 0;
+		
+		
 		return mid;
 	}
 	
@@ -145,6 +147,16 @@ public class MathPlus
 	{
 		int often = 0;
 		return often;
+	}
+	
+	/**
+	 * This method finds if the number is a prime number or not
+	 * @param num
+	 */
+	
+	public static boolean prime (int [] num)
+	{
+		
 	}
 
 
