@@ -55,7 +55,7 @@ public class ExamCram {
 					if (userSubject.equalsIgnoreCase("physics")) {
 						do {
 							System.out.println(
-									"Would you like to 1.) review content, 2.) practice questions, 3.) final review test, 4.)change subjects");
+									"Would you like to 1.) review exam content, 2.) practice questions, 3.) final review test, 4.)change subjects");
 							physicsPathway = sc.nextInt();
 
 							if (physicsPathway == 1) {
@@ -94,7 +94,7 @@ public class ExamCram {
 								}
 								double percentage = physicsTestCounter / physicsTestArray.length * 100;
 								System.out.println("You got a " + percentage + "% on this test. The answers were "
-										+ physicsTest(100) + ".");
+										+ physicsTest(100) //doesnt work because you need to have a return value + ".");
 
 								System.out.println("Would you like to try something else? yes/no");
 								String userPhysicsChange = sc.nextLine();
@@ -113,7 +113,7 @@ public class ExamCram {
 					if (userSubject.equalsIgnoreCase("SAP")) {
 						do {
 							System.out.println(
-									"Would you like to 1.) review content, 2.) practice questions, 3.) final review test, 4.)change subjects");
+									"Would you like to 1.) review exam content, 2.) practice questions, 3.) final review test, 4.)change subjects");
 							SAPPathway = sc.nextInt();
 
 							if (SAPPathway == 1) {
@@ -170,7 +170,7 @@ public class ExamCram {
 					if (userSubject.equalsIgnoreCase("CS")) {
 						do {
 							System.out.println(
-									"Would you like to 1.) review content, 2.) practice questions, 3.) final review test, 4.)change subjects");
+									"Would you like to 1.) review exam content, 2.) practice questions, 3.) final review test, 4.)change subjects");
 							CSPathway = sc.nextInt();
 
 							if (CSPathway == 1) {
@@ -285,45 +285,126 @@ public class ExamCram {
 		
 		switch (questionNumber)
 		{
-		case 1: System.out.println(");
+		case 1: System.out.println("The term kinematics is best described as (1.1)\r\n" + 
+				"1.) A term used to quantify motion\r\n" + 
+				"2.) The study of a position \r\n" + 
+				"3.) The study of how objects move\r\n" + 
+				"4.) A term used to quantify inertia\r\n" 
+				);
 			break;
-		case 2: System.out.println(");
+		case 2: System.out.println("For a straight line on a position-time graph, the rise refers to the change in quantity? (1.2)\r\n" + 
+				"1.) Slope\r\n" + 
+				"2.) Time \r\n" + 
+				"3.) Velocity\r\n" + 
+				"4.) Position \r\n");
 			break;
-		case 3: System.out.println(");
+		case 3: System.out.println("A river has a current of 2.3 m/s. A man points his boat so that it is directed straight across the river. In still water, the boat can move with a speed of 3.2 m/s. What is the average speed of the boat while travelling across the river? (2.2)\r\n" + 
+				"1.) 1.1 m/s\r\n" + 
+				"2.) 2.8 m/s\r\n" + 
+				"3.) 3.9 m/s\r\n" + 
+				"4.) 5.5 m/s\r\n");
 			break;
-		case 4: System.out.println(");
+		case 4: System.out.println("A basketball is shot with an initial velocity of 16 m/s at an angle of 55°. What is the approximate horizontal distance that the ball travels in 1.5 s? (2.2, 2.3)\r\n" + 
+				"1.) 9.1 m\r\n" + 
+				"2.) 13 m\r\n" + 
+				"3.) 14 m\r\n" + 
+				"4.) 20 m\r\n");
 			break;
-		case 5: System.out.println(");
+		case 5: System.out.println("Which of the following forces is caused by the electric charges of particles? (3.1)\r\n" + 
+				"1.) Electromagnetic\r\n" + 
+				"2.) Ravitational\r\n" + 
+				"3.) Weak nuclear\r\n" + 
+				"4.) Strong nuclear\r\n");
 			break;
-		case 6: System.out.println(");
+		case 6: System.out.println("What is the net force experienced by a 20.0 kg object that accelerates at a rate of 4.0 m/s²? (3.3)\r\n" + 
+				"1.) 80 N\r\n" + 
+				"2.) 60 N\r\n" + 
+				"3.) 800 N\r\n" + 
+				"4.) 5.0 N\r\n");
 			break;
-		case 7: System.out.println(");
+		case 7: System.out.println("Which of the following scenarios will result in the largest amount of frictional force from the air? (4.1)\r\n" + 
+				"1.) A small surface area moving slowly \r\n" + 
+				"2.) A small surface area moving rapidly\r\n" + 
+				"3.) A large surface area moving slowly\r\n" + 
+				"4.) A large surface area moving rapidly\r\n");
 			break;
-		case 8: System.out.println(");
+		case 8: System.out.println("Two blocks, at 4.0 kg and 5.0 kg, are suspended from the ceiling by a piece of string. What is the tension in the string? (3.5)\r\n" + 
+				"1.) 9.0 N\r\n" + 
+				"2.) 88 kg\r\n" + 
+				"3.) 88 N\r\n" + 
+				"4.) 49 N\r\n");
 			break;
-		case 9: System.out.println(");
+		case 9: System.out.println("The type of energy possessed by moving objects is (5.2)\r\n" + 
+				"1.) Kinetic energy\r\n" + 
+				"2.) Potential energy\r\n" + 
+				"3.) Chemical energy\r\n" + 
+				"4.) Work energy \r\n");
 			break;
-		case 10: System.out.println(");
+		case 10: System.out.println("What power input is needed for a 70.0 kg person to go up 5.00m of stairs in 2.00s? (5.5)\r\n" + 
+				"1.) 3430 J\r\n" + 
+				"2.) 175 J\r\n" + 
+				"3.) 1720 J\r\n" + 
+				"4.) 340 J\r\n");
 			break;
-		case 11: System.out.println(");
+		case 11: System.out.println("The term used to describe the transfer of thermal energy that occurs when warmer objects are in physical contact with colder objects is (6.2)\r\n" + 
+				"1.) Thermal convection\r\n" + 
+				"2.) Thermal induction\r\n" + 
+				"3.) Thermal radiation \r\n" + 
+				"4.) Thermal conduction\r\n");
 			break;
-		case 12: System.out.println(");
+		case 12: System.out.println("An increase in the motion of the particles that make up a substance will have what effect? (6.1)\r\n" + 
+				"1.) It will make the substance warmer\r\n" + 
+				"2.) It will make the substance colder\r\n" + 
+				"3.) It will make the substance spin\r\n" + 
+				"4.) It will not have any effect on the subject\r\n");
 			break;
-		case 13: System.out.println(");
+		case 13: System.out.println("Which of the following statements is true of amplitude? (9.4)\r\n" + 
+				"1.) When the difference between the frequency of a wave and its natural frequency increases, the amplitude of a wave increases.\r\n" + 
+				"2.) A decrease in wave energy decreases a wave’s amplitude.\r\n" + 
+				"3.) When damping is increased, the amplitude of a wave increases\r\n" + 
+				"4.) When a system vibrates close to a harmonic, resonance occurs and the amplitude of the observed vibration decreases.\r\n");
 			break;
-		case 14: System.out.println(");
+		case 14: System.out.println("If you know the linear density of a violin string and want to calculate the speed of a wave on the violin string, which additional information is needed? (8.4)\r\n" + 
+				"1.) Tension on the string\r\n" + 
+				"2.) Temperature of the string\r\n" + 
+				"3.) Time to complete a cycle\r\n" + 
+				"4.) Density of the violin’s sounding board\r\n");
 			break;
-		case 15: System.out.println(");
+		case 15: System.out.println("When two waves meet, one with amplitude of 4 cm and the other with amplitude 2 cm, what are the possible maximum and minimum amplitudes of the resulting wave? (9.1)\r\n" + 
+				"1.) Maximum 6 cm, minimum 2 cm\r\n" + 
+				"2.) Maximum 4 cm, minimum 2 cm\r\n" + 
+				"3.) Maximum 8 cm, minimum 0.5 cm\r\n" + 
+				"4.) Maximum 6 cm, minimum 6 cm\r\n");
 			break;
-		case 16: System.out.println(");
+		case 16: System.out.println("A truck is travelling at 30 m/s toward a stationary observer. If the truck sounds its horn at a frequency of 700 Hz, what frequency does the observer detect? (Use 340 m/s as the speed of sound.) (9.5)\r\n" + 
+				"1.) 638 Hz\r\n" + 
+				"2.) 643 Hz\r\n" + 
+				"3.) 762 Hz\r\n" + 
+				"4.) 767 Hz\r\n");
 			break;
-		case 17: System.out.println(");
+		case 17: System.out.println("Which of the following is a unit of electrical energy? (11.1)\r\n" + 
+				"1.) Watt\r\n" + 
+				"2.) Volt \r\n" + 
+				"3.) Joule\r\n" + 
+				"4.) Ohm\r\n");
 			break;
-		case 18: System.out.println(");
+		case 18: System.out.println("If an external magnetic field is pointing to the right and the current in a wire is pointing out of the page, in which direction is the force on the wire? (12.5)\r\n" + 
+				"1.) Upward\r\n" + 
+				"2.) Downward\r\n"+ 
+				"3.) Left\r\n" + 
+				"4.) Into the page\r\n");
 			break;
-		case 19: System.out.println(");
+		case 19: System.out.println("Magnetic field lines (12.1)\r\n" + 
+				"1.) Are stronger at the poles\r\n" + 
+				"2.) Can cross one another\r\n" + 
+				"3.) Are affected by gravity\r\n" + 
+				"4.) Exist in two dimensions only\r\n");
 			break;
-		case 20: System.out.println(");
+		case 20: System.out.println("Which device is used to measure the resistance of a load? (11.3, 11.5, 11.7)\r\n" + 
+				"1.) Galvanometer\r\n" + 
+				"2.) Voltmeter\r\n" + 
+				"3.) Ohmmeter\r\n" + 
+				"4.) Ammeter\r\n");
 			break;
 		}
 		
@@ -336,45 +417,45 @@ public class ExamCram {
 		
 		switch(physicsQuestions)
 		{
-		case 1: answer = ;
+		case 1: answer = 3;
 			break;
-		case 2: answer = ;
+		case 2: answer = 4;
 			break;
-		case 3: answer = ;
+		case 3: answer = 3;
 			break;
-		case 4: answer = ;
+		case 4: answer = 3;
 			break;
-		case 5: answer = ;
+		case 5: answer = 1;
 			break;
-		case 6: answer = ;
+		case 6: answer = 1;
 			break;
-		case 7: answer = ;
+		case 7: answer = 4;
 			break;
-		case 8: answer = ;
+		case 8: answer = 3;
 			break;
-		case 9: answer = ;
+		case 9: answer = 1;
 			break;
-		case 10: answer = ;
+		case 10: answer = 3;
 			break;
-		case 11: answer = ;
+		case 11: answer = 4;
 			break;
-		case 12: answer = ;
+		case 12: answer = 1;
 			break;
-		case 13: answer = ;
+		case 13: answer = 2;
 			break;
-		case 14: answer = ;
+		case 14: answer = 1;
 			break;
-		case 15: answer = ;
+		case 15: answer = 1;
 			break;
-		case 16: answer = ;
+		case 16: answer = 4;
 			break;
-		case 17: answer = ;
+		case 17: answer = 3;
 			break;
-		case 18: answer = ;
+		case 18: answer = 1;
 			break;
-		case 19: answer = ;
+		case 19: answer = 1;
 			break;
-		case 20: answer = ;
+		case 20: answer = 3;
 			break;	
 		}
 		return answer;
