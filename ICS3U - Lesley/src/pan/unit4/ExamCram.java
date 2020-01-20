@@ -614,45 +614,137 @@ public class ExamCram {
 		
 		switch (questionNumber)
 		{
-		case 1: System.out.println(");
+		case 1: System.out.println("\r\n" + 
+				"Which of the following is not one of the 8 ethics of programming\r\n" + 
+				"1.) Self\r\n" + 
+				"2.) Product\r\n" + 
+				"3.) Gracious Professionalism \r\n" + 
+				"4.) Public\r\n");
 			break;
-		case 2: System.out.println(");
+		case 2: System.out.println("What’s wrong with the following main method? Public static boolean main(String args[]) {\r\n" + 
+				"1.) The main should be private\r\n" + 
+				"2.) The p in public should be lowercase\r\n" + 
+				"3.) The arguments should be int\r\n" + 
+				"4.) The p in public should be lowercase and boolean should be void\r\n");
 			break;
-		case 3: System.out.println(");
+		case 3: System.out.println("What are the primitive types?\r\n" + 
+				"1.) byte, String, int, double, char, boolean, float, long\r\n" + 
+				"2.) double, char, boolean, float\r\n" + 
+				"3.) byte, short, int, long, float, double, char, boolean\r\n" + 
+				"4.) double, class, boolean, float\r\n");
 			break;
-		case 4: System.out.println(");
+		case 4: System.out.println("The “less than or equal to” comparison operator in Java is _______.\r\n" + 
+				"1.) =<\r\n" + 
+				"2.) !=\r\n" + 
+				"3.) <=\r\n" + 
+				"4.) <\r\n");
 			break;
-		case 5: System.out.println(");
+		case 5: System.out.println("What are the benefits of modular programming?\r\n" + 
+				"1.) Methods are used to break code into manageable pieces\r\n" + 
+				"2.) Make code more reusable\r\n" + 
+				"3.) Help to debug code\r\n" + 
+				"4.) All of the above\r\n");
 			break;
-		case 6: System.out.println(");
+		case 6: System.out.println("The following code displays ______.\r\n" + 
+				"		double temp = 50;\r\n" + 
+				"		\r\n" + 
+				"		if (temp >= 100)\r\n" + 
+				"			System.out.println(“too hot’);\r\n" + 
+				"		else if (temp <=40)\r\n" + 
+				"			System.out.println(“too cold”);\r\n" + 
+				"		else \r\n" + 
+				"			System.out.println(“just right”);\r\n" + 
+				"1.) too hot too cold just right\r\n" + 
+				"2.) too hot\r\n" + 
+				"3.) too cold\r\n" + 
+				"4.) just right\r\n");
 			break;
-		case 7: System.out.println(");
+		case 7: System.out.println("The order of precedence (from high to low) of the operators +,*, &&, ||, ! is\r\n" + 
+				"1.) *, +, !, &&, ||\r\n" + 
+				"2.) *, +, &&, ||, !\r\n" + 
+				"3.) &&, ||, !, +, *\r\n" + 
+				"4.)  *, +, !, ||, &&\r\n");
 			break;
-		case 8: System.out.println(");
+		case 8: System.out.println("What does the String Class, s.length() do?\r\n" + 
+				"1.) returns the character at index x\r\n" + 
+				"2.) returns true/false if the string stored in s is the same as that in t ignoring the case\r\n" + 
+				"3.) returns the number of characters in the string\r\n" + 
+				"4.) returns the string in all lowercase\r\n");
 			break;
-		case 9: System.out.println(");
+		case 9: System.out.println("What does the Math Class, Math.random() do?\r\n" + 
+				"1.) returns a double from 0.0 and less than 1.0\r\n" + 
+				"2.) return a double of the square root of the value given\r\n" + 
+				"3.) returns  the minimum of the two values given\r\n" + 
+				"4.) returns a double of the base raised to the exponent\r\n");
 			break;
-		case 10: System.out.println(");
+		case 10: System.out.println("What does void in the following method, public static void main(String[] args), mean?\r\n" + 
+				"1.) when called on, this method will not have a return value\r\n" + 
+				"2.) void is the method name\r\n" + 
+				"3.) when called on, this method will return a boolean\r\n" + 
+				"4.) void represent that this method needs no parameters\r\n");
 			break;
-		case 11: System.out.println(");
+		case 11: System.out.println("What is wrong with the following line, System.out.println(“Hello World”)\r\n" + 
+				"1.) System should be lowercase\r\n" + 
+				"2.) missing a semicolon at the end\r\n" + 
+				"3.) Hello World needs to be in single quotations\r\n" + 
+				"4.) missing a comma at the end\r\n");
 			break;
-		case 12: System.out.println(");
+		case 12: System.out.println("What is // used for?\r\n" + 
+				"1.) print a new line\r\n" + 
+				"2.) block comments\r\n" + 
+				"3.) single line comments\r\n" + 
+				"4.) print double space\r\n");
 			break;
-		case 13: System.out.println(");
+		case 13: System.out.println("What does the String Class, s.equalsIgnoreCase(t) do?\r\n" + 
+				"1.) returns the string in all lowercase\r\n" + 
+				"2.) returns the character at index x\r\n" + 
+				"3.) returns true/false if the string stored in s is the same as that in t\r\n" + 
+				"4.) returns true/false if the string stored in s is the same as that in t ignoring the case\r\n");
 			break;
-		case 14: System.out.println(");
+		case 14: System.out.println("If you run a program and it returns with ArrayIndexOutOfBoundsException. There’s a ______.\r\n" + 
+				"1.) runtime error\r\n" + 
+				"2.) syntax error\r\n" + 
+				"3.) format error \r\n" + 
+				"4.) logic error\r\n");
 			break;
-		case 15: System.out.println(");
+		case 15: System.out.println("What are two ways to make code more readable?\r\n" + 
+				"1.) comments and arrays\r\n" + 
+				"2.)  descriptive names and randomized casing\r\n" + 
+				"3.) descriptive names and comments\r\n" + 
+				"4.) indentation and return statements \r\n");
 			break;
-		case 16: System.out.println(");
+		case 16: System.out.println("A for statement is a _________.\r\n" + 
+				"1.) conditional loop\r\n" + 
+				"2.) counter loop \r\n" + 
+				"3.) selection statement\r\n" + 
+				"4.) selection loop\r\n");
 			break;
-		case 17: System.out.println(");
+		case 17: System.out.println("// are used for what in Java?\r\n" + 
+				"1.) single line commenting \r\n" + 
+				"2.) end of a java statement \r\n" + 
+				"3.) block comment\r\n" + 
+				"4.) Java doc comment\r\n");
 			break;
-		case 18: System.out.println(");
+		case 18: System.out.println("Which of the following is the correct way to name a variable?\r\n" + 
+				"1.) StudentNumber\r\n" + 
+				"2.) _student_number\r\n" + 
+				"3.) STUDENTNUMBER\r\n" + 
+				"4.) studentNumber\r\n");
 			break;
-		case 19: System.out.println(");
+		case 19: System.out.println("What will the following code execute?\r\n" + 
+				"		int x = 10;\r\n" + 
+				"		x += 5;\r\n" + 
+				"		System.out.println(“X equals” + x);\r\n" + 
+				"1.) prints out “X equals x”\r\n" + 
+				"2.) prints out “X equals 10”\r\n" + 
+				"3.) prints out “X equals 15”\r\n" + 
+				"4.) prints out “X equals 5”\r\n");
 			break;
-		case 20: System.out.println(");
+		case 20: System.out.println("What does the Math Class, Math.pow(base, exp) do?\r\n" + 
+				"1.) return a double of the square root of the value given\r\n" + 
+				"2.) returns a double from 0.0 and less than 1.0\r\n" + 
+				"3.)returns the maximum of the two values given\r\n" + 
+				"4.) returns a double of the base raised to the exponent\r\n");
 			break;
 		}
 		
@@ -665,45 +757,45 @@ public class ExamCram {
 		
 		switch(CSQuestions)
 		{
-		case 1: answer = ;
+		case 1: answer = 3;
 			break;
-		case 2: answer = ;
+		case 2: answer = 4;
 			break;
-		case 3: answer = ;
+		case 3: answer = 3;
 			break;
-		case 4: answer = ;
+		case 4: answer = 3;
 			break;
-		case 5: answer = ;
+		case 5: answer = 4;
 			break;
-		case 6: answer = ;
+		case 6: answer = 4;
 			break;
-		case 7: answer = ;
+		case 7: answer = 1;
 			break;
-		case 8: answer = ;
+		case 8: answer = 3;
 			break;
-		case 9: answer = ;
+		case 9: answer = 1;
 			break;
-		case 10: answer = ;
+		case 10: answer = 1;
 			break;
-		case 11: answer = ;
+		case 11: answer = 2;
 			break;
-		case 12: answer = ;
+		case 12: answer = 3;
 			break;
-		case 13: answer = ;
+		case 13: answer = 4;
 			break;
-		case 14: answer = ;
+		case 14: answer = 1;
 			break;
-		case 15: answer = ;
+		case 15: answer = 3;
 			break;
-		case 16: answer = ;
+		case 16: answer = 2;
 			break;
-		case 17: answer = ;
+		case 17: answer = 1;
 			break;
-		case 18: answer = ;
+		case 18: answer = 4;
 			break;
-		case 19: answer = ;
+		case 19: answer = 3;
 			break;
-		case 20: answer = ;
+		case 20: answer = 4;
 			break;	
 		}
 		return answer;
